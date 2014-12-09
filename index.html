@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="java.js"></script>
+<script type="text/javascript" src="cal.js"></script>
+<script type="text/javascript" src="gallery.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<p>USE 1,2,3,4,5,6 keys to navigate around cube</p>
+<p>1- gallery</p>
+<p>3-calculator</p>
+		<div id="stage">
+  			<div id="cube">
+    			<div class="side front">
+                	<table border ="0" width="100%" height="100%" id="gallery">
+                		<tr class="picMenu">
+                        	<td colspan="1" align="left"><button id="prev" >Prev</button></td>
+                        	<td colspan="1" align="center"><button id="search">Search</button></td>
+                        	<td colspan="1" align="right"><button id="next" >Next</button></td>
+                    	</tr>
+                        <tr>
+                        	<td colspan="3">
+                                <table border="0" id="thumbs" height="100%" width="100%";>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                               
+                                </table>
+                        	</td>
+                        </tr>
+                
+                	</table>
+	         
+    			</div>
+                <div class="side back">
+      			Test 2
+					         
+    			</div>
+    			<div class="side right">
+    			<table border="0" width="100%" height="100%" id="cal" >
+                    <tr>
+                    <td colspan="4"><input type="text" id ="display" disabled="true" style ="text-align:right" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><button id="clear" >AC</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="seven">7</button></td>
+                        <td><button id="eight">8</button></td>
+                        <td><button id="nine">9</button></td>           
+                        <td><button id="divide">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="four">4</button></td>
+                        <td><button id="five">5</button></td>
+                        <td><button id="six">6</button></td>           
+                        <td><button id="times">x</button></td>
+                  </tr>
+                    <tr>
+                        <td><button id="one">1</button></td>
+                        <td><button id="two">2</button></td>
+                        <td><button id="three">3</button></td>           
+                        <td><button id="minus">-</button></td>
+                  </tr>
+                    <tr>
+                        <td><button id="zero">0</button></td>
+                        <td><button id="dot">.</button></td>
+                        <td><button id="equal">=</button></td>           
+                        <td><button id="plus">+</button></td>
+                  </tr>
+				</table>
+    			</div>
+    			<div class="side left">
+     			TEST 4
+    			</div>
+    			<div class="side top">
+      			TEST 5
+    			</div>
+    			<div class="side bottom">
+      			TEST 6
+    			</div>
+			</div>
+		</div>
+</body>
+</html>

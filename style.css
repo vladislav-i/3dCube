@@ -1,0 +1,106 @@
+body{
+	background-color:black;
+}
+
+p{
+	color:ffffff;
+}
+
+#cal button {
+	height:100%;
+	width:100%;
+	border-radius: 6px;
+	font-size:16pt;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #666666;
+}
+#thumbs td{
+	text-align:center;
+		
+}
+
+#prev {
+	
+	background: #3498db;
+  	border-radius: 6px;
+  	text-shadow: 1px 1px 1px #666666;
+  	color: #ffffff;
+}
+#search {
+	background: #3498db;
+  	border-radius: 6px;
+  	text-shadow: 1px 1px 1px #666666;
+  	color: #ffffff;
+}
+#next {
+
+	background: #3498db;
+  	border-radius: 6px;
+  	text-shadow: 1px 1px 1px #666666;
+  	color: #ffffff;
+}
+.picMenu{
+	height: 20px;
+}
+
+
+#cal button:hover {
+	color: #3498db;
+}
+
+#stage {
+	
+	perspective:800px;
+	perspective-origin: 50% 200px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#cube {
+	position: relative;
+  	margin: 100px auto;
+  	height: 400px;
+  	width: 400px;
+  	transition: transform 2s linear;
+  	transform-style: preserve-3d;
+}
+#cube .side #display {
+	font-size:24pt;
+	height:60%;
+	width:100%;
+}
+
+/* stage width - border width = cube div width and height */
+.side{
+	position: absolute;
+  	height: 360px;
+  	width: 360px;
+  	padding: 20px;
+  	font-size: 27px;
+  	line-height: 1em;
+  	color: #fff;
+  	border: 1px solid #555;
+  	border-radius: 3px;
+	/*backface-visibility:hidden;*/
+}
+/* rotate plane and putting at correct perspective(translateZ) */
+
+#cube .front  { transform: rotateY(   0deg ) translateZ( 200px ); }
+#cube .back   { transform: rotateX( 180deg ) translateZ( 200px ); }
+#cube .right  { transform: rotateY(  90deg ) translateZ( 200px ); }
+#cube .left   { transform: rotateY( -90deg ) translateZ( 200px ); }
+#cube .top    { transform: rotateX(  90deg ) translateZ( 200px ); }
+#cube .bottom { transform: rotateX( -90deg ) translateZ( 200px ); }
+
+#cube { transform: translateZ( -100px ); }
+
+#cube.show-front  { transform: translateZ( -100px ) rotateY(    0deg ); }
+#cube.show-back   { transform: translateZ( -100px ) rotateX( -180deg ); }
+#cube.show-right  { transform: translateZ( -100px ) rotateY(  -90deg ); }
+#cube.show-left   { transform: translateZ( -100px ) rotateY(   90deg ); }
+#cube.show-top    { transform: translateZ( -100px ) rotateX(  -90deg ); }
+#cube.show-bottom { transform: translateZ( -100px ) rotateX(   90deg ); }
+
+/*animation of it rotating*/
+
+#cube { transition: transform 1s; }
